@@ -67,6 +67,17 @@
                         <button class="btn btn-primary" style="margin-top: 1em;">Post</button>
                     </div>
                 </div>
+
+                <div class="card" style="margin-top: 1em;">
+                    <div class="card-body">
+                    </div>
+                    <div class="card-footer">
+                        <button id="btnLike" class="btn btn-link" data-liked="unliked">
+                            <i class="far fa-thumbs-up"></i>
+                            Like
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="col-md-2">
 
@@ -83,6 +94,21 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/site.js"></script>
+    <script src="js/fa.js"></script>
+
+    <script type="text/javascript">
+        $('#btnLike').click(() => {
+            if ($('btnLike').data('liked') === 'unliked') {
+                $('#btnLike').removeClass();
+                $('#btnLike').addClass('btn btn-primary');
+                $('#btnLike').data('liked', 'liked');
+            } else {
+                $('#btnLike').removeClass();
+                $('#btnLike').addClass('btn btn-link');
+                $('#btnLike').data('liked', 'unliked');
+            }
+        });
+    </script>
 </body>
 
 </html>
