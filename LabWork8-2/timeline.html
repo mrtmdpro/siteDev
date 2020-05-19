@@ -34,6 +34,16 @@
                     </ul>
                 </div>
             </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item" href="#">Privacy</a>
+                <a class="dropdown-item" href="#">Legal rights</a>
+              </div>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -44,7 +54,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-4">
-                                <img class="mx-auto d-block img-thumbnail img-overlay" src="pics/ava1.jpg"
+                                <img class="mx-auto d-block img-thumbnail img-overlay img-fluid" src="pics/ava1.jpg"
                                     style="max-width: 100%;"></img>
                             </div>
                             <div class="col-md-8">
@@ -69,9 +79,36 @@
                 </div>
 
                 <div class="card" style="margin-top: 1em;">
+                  <h5 class="card-header">Mike Thuy</h5>
                     <div class="card-body">
-                      <img src="pics/pic1.jpg" alt="VietNam">
+                      <img src="pics/pic1.jpg" alt="VietNam" class="img-fluid">
                       <p>Vai dong van vo</p>
+                    </div>
+                    <div class="card-footer">
+                        <button id="btnLike" class="btn btn-link" data-liked="unliked">
+                            <i class="far fa-thumbs-up"></i>
+                            Like
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 1em;">
+                  <h5 class="card-header">Mike Thuy</h5>
+                    <div class="card-body">
+                      <img src="pics/pic2.jpg" alt="La gare" class="img-fluid">
+                      <p>Nha  ga cua mot thoi xua cu</p>
+                    </div>
+                    <div class="card-footer">
+                        <button id="btnLike" class="btn btn-link" data-liked="unliked">
+                            <i class="far fa-thumbs-up"></i>
+                            Like
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 1em;">
+                  <h5 class="card-header">Giang Blue</h5>
+                    <div class="card-body">
+                      <img src="pics/pic3.jpg" alt="Nothern" class="img-fluid">
+                      <p>O noi phuong Bac xa xoi</p>
                     </div>
                     <div class="card-footer">
                         <button id="btnLike" class="btn btn-link" data-liked="unliked">
